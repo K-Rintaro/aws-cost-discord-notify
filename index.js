@@ -60,7 +60,7 @@ cron.schedule('0 0 23 * * *', () => {
 })
 
 cron.schedule('0 0 23 1 * *', () => {
-    ce.getTodayCosts(null, function(err, data) {
+    ce.getLastMonthCosts(null, function(err, data) {
         if (err) {
             console.log(err);
         } else {
